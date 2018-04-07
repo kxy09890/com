@@ -8,7 +8,6 @@ public class Testmain {
 		// TODO 人物配置
 		System.out.println("*欢迎来到乡村大战*");
 		System.out.println("*请给你的人物设置一个动听的名字");
-		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		String uName = sc.nextLine();
 		Player p1 = new Player();

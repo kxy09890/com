@@ -4,7 +4,6 @@ import java.util.Comparator;
 
 public class CompareToPoker implements Comparator<Poker> {// ←自定義創建比較器，比較兩個類
 
-	@Override
 	public int compare(Poker o1, Poker o2) {// ←自定义的比较规则方法
 		// TODO 给出牌组以备比较时计分之用↓
 		String[] color = { "方片", "梅花", "红桃", "黑桃" };

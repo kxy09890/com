@@ -10,8 +10,8 @@ public class GameStart {// 游戲流程類
 	String[] point = new String[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
 	String[] color = new String[] { "黑桃", "红桃", "梅花", "方块" };
 	Scanner input = new Scanner(System.in);
-	List<Poker> pokerList = new ArrayList<>();
-	List<Player> playerList = new ArrayList<>();
+	List<Poker> pokerList = new ArrayList<Poker>();
+	List<Player> playerList = new ArrayList<Player>();
 
 	public void initialize() { // 初始化方法↓
 		for (int i = 0; i < 4; i++) {// ←循環四個花色

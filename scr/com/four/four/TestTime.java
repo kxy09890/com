@@ -3,7 +3,7 @@ package com.four.four;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Test {
+public class TestTime {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

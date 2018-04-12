@@ -16,20 +16,20 @@ public class Player implements Runnable {
 	}
 
 	public Player(Player target) {
-	
+
 		this.target = target;
 	}
 
 	public void attack() {
-		if(target.nowHP == 0) {
+		if (target.nowHP == 0 && nowHP != 0) {
 			System.out.println("*战斗结束*");
 			System.err.println("提示：下回开始第一章时偷偷按2试试，有惊喜！");
 			System.exit(0);
-		}else if (nowHP == 0) {
+		} else if (nowHP == 0 && target.nowHP != 0) {
 			System.err.println("恭喜通关新手试炼关--后面还有赵四，刘能，王大拿等boss~~~静等更新！");
 			System.exit(0);
 		}
-		
+
 		int a = GameUtil.getRandomNumber(minAP, maxAP);// 随机出本次的伤害值
 		if (Math.random() < percent) {// 随机小数小于角色暴击率时，暴击
 			System.out.print("[暴击]");
@@ -39,7 +39,7 @@ public class Player implements Runnable {
 			target.nowHP = 0;
 			System.out.println(
 					name + " 对" + target.name + "造成了" + a + "点伤害," + target.name + "剩余生命值为0," + target.name + "被干掉了");
-			
+
 			return;
 		} else {
 			target.nowHP -= a;
@@ -113,6 +113,5 @@ public class Player implements Runnable {
 	public void setPercent(double percent) {
 		this.percent = percent;
 	}
-	
-	
+
 }

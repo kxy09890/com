@@ -22,6 +22,15 @@ public class Testmain {
 		p1.setPercent(0.15);
 		p1.setSpeed(1000);
 
+		p2.setName("乡村野牛");
+		p2.setMaxHP(2000);
+		p2.setNowHP(2000);
+		p2.setMaxAP(50);
+		p2.setMinAP(15);
+		p2.setPercent(0.25);
+		p2.setSpeed(410);
+				
+		
 		System.err
 				.print(p1.getName() + "的初始属性： 最大血量[" + p1.getMaxHP() + "]|攻击力[" + p1.getMinAP() + "-" + p1.getMaxAP());
 		System.err.println("]|暴击率[" + p1.getPercent() + "]|攻速[" + p1.getSpeed() + "]");

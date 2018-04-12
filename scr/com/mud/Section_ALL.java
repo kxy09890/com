@@ -15,7 +15,7 @@ public class Section_ALL {
 			p1.setSpeed(800);
 			System.err.println("攻击力增加到450！攻速也有小幅提升！");
 		}else {
-			System.out.println("游戏已退出");
+			System.out.println("输入错误，游戏已退出");
 			System.exit(0);
 		}
 	}

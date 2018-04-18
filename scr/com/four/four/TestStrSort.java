@@ -5,6 +5,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TestStrSort {
 
@@ -53,4 +55,5 @@ public class TestStrSort {
 			System.out.println(key+"|出现次数："+m.get(key));			
 		}		
 	}
+
 }
